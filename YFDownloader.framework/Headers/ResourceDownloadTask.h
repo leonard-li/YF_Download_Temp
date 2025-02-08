@@ -22,6 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) NSTimeInterval nextRetryTime; // 下一次重试的时间戳
 @property (nonatomic, assign) int cdnCount; // 单 CDN 下载累计次数
 @property (nonatomic, copy) NSString *loadCdn; // 当前下载中的 CDN
+@property (nonatomic, assign) int isFirst; // 是否是首次任务下载 0:首次；1:非首次；默认1非首次
 
 - (instancetype)initWithTaskId:(NSString *)taskId
                   resourcePath:(NSString *)resourcePath

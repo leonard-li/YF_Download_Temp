@@ -36,23 +36,21 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * 创建待下载的资源任务
  * 不设置outputDir，使用游戏默认根目录: 游戏默认缓存根目录/GameResourse/
- * @param resourcePath
- * @param cdnUrls
+ * @param resourcePath 资源路径
+ * @param cdnUrls CDN列表
  */
 + (void)createDownloadTaskWithResourcePath:(NSString *)resourcePath
                                   cdnUrls:(NSArray<Cdn *> *)cdnUrls;
 
 /**
  * 根据任务id删除任务 用于资源相对路径下载失败使用 responseCode = 404 的情况
- * @param taskId
- * @return
+ * @param taskId 任务id
  */
 + (int)deleteTaskById:(NSString *)taskId;
 
 /**
  * 根据资源相对路径删除任务 用于资源相对路径下载失败使用 responseCode = 404 的情况
- * @param resourcePath
- * @return
+ * @param resourcePath 资源路径
  */
 + (int)deleteTasksByResourcePath:(NSString *)resourcePath;
 
