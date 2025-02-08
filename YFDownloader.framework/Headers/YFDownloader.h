@@ -36,4 +36,4 @@ FOUNDATION_EXPORT const unsigned char YFDownloaderVersionString[];
 
 
 
-#define YF_DOWNLOADER_VERSION @"1.0.2"
+#define YF_DOWNLOADER_VERSION @"1.0.3"

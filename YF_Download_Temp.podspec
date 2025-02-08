@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "YF_Download_Temp"
-  spec.version      = "1.0.2"
+  spec.version      = "1.0.3"
   spec.summary      = "下载工具"
 
   spec.description  = <<-DESC
