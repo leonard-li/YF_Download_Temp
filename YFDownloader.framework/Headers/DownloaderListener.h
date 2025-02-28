@@ -27,7 +27,8 @@
 // 下载完成回调
 - (void)onDownloadSuccess:(ResourceDownloadTask *)task
              fileSavePath:(NSString *)fileSavePath
-                      cdn:(NSString *)cdn;
+                      cdn:(NSString *)cdn
+             downloadSize:(long)downloadSize;
 
 // 下载失败回调
 - (void)onDownloadFail:(ResourceDownloadTask *)task

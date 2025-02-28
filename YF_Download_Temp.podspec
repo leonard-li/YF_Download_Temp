@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "YF_Download_Temp"
-  spec.version      = "1.0.3"
+  spec.version      = "1.0.7"
   spec.summary      = "下载工具"
 
   spec.description  = <<-DESC
@@ -24,7 +24,7 @@ Pod::Spec.new do |spec|
 
   spec.requires_arc = true
 
-  spec.dependency "YF_Core", '>= 1.5.9.3'
+  spec.dependency "YF_Core", '>= 1.6.0'
   spec.resource_bundles = {
     'YF_DownloadResources' => ['Resources/PrivacyInfo.xcprivacy']
   }
